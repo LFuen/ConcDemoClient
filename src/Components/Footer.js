@@ -4,7 +4,7 @@ import {Foot} from './Styled'
 function Footer() {
     return(
         <Foot>
-            Phalanx &copy;
+            DemoProduct &copy;
         </Foot>
     )
 }

@@ -34,7 +34,11 @@ export default class ProdInfoColor extends Component {
 
   render() {
     return (
-      <GroupLink to={`/Listing/${encodeURI(this.props.color)}/${encodeURI(this.props.phase)}`}>
+      <GroupLink
+        to={`/Listing/${encodeURI(this.props.color)}/${encodeURI(
+          this.props.phase
+        )}`}
+      >
         <LinkSec className="stock">
           <article
             className="product"
