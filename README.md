@@ -23,6 +23,9 @@ Production/Inventory Tracker overview: This application is to be a production an
     (4) See the status changed to `Produced` when a product tagged with `In Production` status is produced.
     (5) See the status changed to `In Stock` when a product tagged with `Produced` is moved into the shipping and packing area and packaging is completed.
     <br />
+    <p>
+    <a href='https://github.com/LFuen/ConcDemoServer'>Back End / Server Side</a>
+    </p>
   </p>
 
 <p>Login Screen</p>
