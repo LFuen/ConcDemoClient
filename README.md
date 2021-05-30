@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://gitlab.com/ledjj/concretti-application">
-    <img src="public/concretti.png" alt="Logo" width="80" height="80">
+    <img src="public/votedLogo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Concretti Aplication Suite</h3>
@@ -31,16 +31,15 @@ Production/Inventory Tracker overview: This application is to be a production an
 <img align="center" src="src/images/app/2.jpg" />
 <p>Calculator</p>
 <img align="center" src="src/images/app/C1.jpg" />
+<img align="center" src="src/images/app/C2.jpg">
 <p>Inventory</p> 
 <img align="center" src="src/images/app/P1.jpg" />
 <p>New Product</p> 
 <img align="center" src="src/images/app/P2.jpg" />
-<p>In Production</p> 
+<p>In Production By Color</p> 
 <img align="center" src="src/images/app/P3.jpg" />
-<p>Produced</p> 
+<p>Product Break Down</p> 
 <img align="center" src="src/images/app/P4.jpg" />
-<p>In Stock</p> 
-<img align="center" src="src/images/app/P5.jpg" />
 
   <p>
     <br />
