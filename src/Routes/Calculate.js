@@ -32,7 +32,7 @@ class Calculate extends Component {
     genComp = () => {
         let comps = []
         for(let i = 0; i < this.state.component; i++) {
-            comps.push(<ColorProd num={i} selector={this.selectorChange}/>)
+            comps.push(<ColorProd key={i} colorprod={this.state.prodList[i]} num={i} selector={this.selectorChange}/>)
         }
         return comps
     }
