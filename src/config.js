@@ -4,4 +4,4 @@ export default {
 };
 
 
-// https://mighty-wildwood-20641.herokuapp.com/api
+// http://localhost:8000/api

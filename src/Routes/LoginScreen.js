@@ -41,7 +41,7 @@ const LoginScreen = (props) => {
   return (
     <Login className="main">
       <article>
-        <h1>Phalanx</h1>
+        <h1>Demo</h1>
         <form onSubmit={handleSubmitJwtAuth}>
             {error && <div>{error.error}</div>}
         <br />
