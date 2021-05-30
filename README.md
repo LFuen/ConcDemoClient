@@ -1,11 +1,11 @@
 <!-- LEDJJ LOGO -->
 <br />
 <p align="center">
-  <a href="https://gitlab.com/ledjj/concretti-application">
+  <a href="https://www.ledjj.org">
     <img src="public/votedLogo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Concretti Aplication Suite</h3>
+  <h3 align="center">Production Aplication Suite</h3>
 
   <p align="center">
     This project is a suite of applications for Concretti, an artisnal concrete production company.
