@@ -107,7 +107,7 @@ const Login = styled.section`
     color: #000000;
   }
 
-  /* animation: 1s ${loginFade}; */
+  animation: 1s ${loginFade};
 `;
 
 // APP SELECTOR
@@ -205,7 +205,7 @@ const Selector = styled.section`
     color: #000000;
   }
 
-  /* animation: 1s ${selectFade}; */
+  animation: 1s ${selectFade};
 `;
 
 // CALCULATOR APP
@@ -319,7 +319,7 @@ const CalcForm = styled.form`
   p {
     font-size: 10px;
   }
-  /* animation: 1s ${calcFade}; */
+  animation: 1s ${calcFade};
 
   #ledjj {
     font-family: Rockwell;
@@ -484,7 +484,7 @@ const KiloForm = styled.form`
   p {
     font-size: 10px;
   }
-  /* animation: 1s ${calcFade}; */
+  animation: 1s ${calcFade};
 
   #ledjj {
     font-family: Rockwell;
@@ -679,7 +679,7 @@ const OutputSec = styled.section`
     bottom: 18px;
   }
 
-  /* animation: 1s ${calcFade}; */
+  animation: 1s ${calcFade};
 `;
 const ProdChoose = styled.section`
   position: relative;
@@ -896,7 +896,7 @@ const InventorySect = styled.section`
     outline: none;
   }
 
-  /* animation: 1s ${prodFade}; */
+  animation: 1s ${prodFade};
 `;
 const InProdLink = styled(Link)`
   text-decoration: none;
@@ -1064,7 +1064,7 @@ const AddForm = styled.form`
     outline: none;
   }
 
-  /* animation: 1s ${prodFade}; */
+  animation: 1s ${prodFade};
 `;
 const ListingSec = styled.section`
   width: 583px;
@@ -1154,7 +1154,7 @@ const ListingSec = styled.section`
     top: 25px;
   }
 
-  /* animation: 1s ${prodFade}; */
+  animation: 1s ${prodFade};
 `;
 const InventorySec = styled.section`
   width: 620px;
@@ -1250,7 +1250,7 @@ const InventorySec = styled.section`
     top: 25px;
   }
 
-  /* animation: 1s ${prodFade}; */
+  animation: 1s ${prodFade};
 `;
 const ProdSec = styled.section`
   margin-top: 30px;  
@@ -1435,7 +1435,7 @@ const ProdDiv = styled.div`
     font-size: 10px;
   }
 
-  /* animation: 1s ${prodFade}; */
+  animation: 1s ${prodFade};
 `;
 
 // MISCELLANEOUS

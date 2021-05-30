@@ -46,7 +46,6 @@ class AddProd extends Component {
 
 
     render() {
-        console.log(this.state)
         return(
             <AddForm onSubmit={this.newProd}>
                 <h1>New Product</h1>
