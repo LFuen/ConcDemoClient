@@ -8,12 +8,12 @@
   <h3 align="center">Production Aplication Suite</h3>
 
   <p align="center">
-    This project is a suite of applications for Concretti, an artisnal concrete production company.
+    This project is a suite of applications for Concretti, an artisanal concrete production company.
 
 The applications included in this suite are the following: (1)Material Calculator and (2)Production/Inventory Tracker.
 
 Material Calculator overview:
-This application is to be a product material calculator that allows the user to (1) select the color and (2)select the products to be manufactured in the selected color. When the user has made all of their selections,  (3) the application will display the required materials for production of those products.
+This application is to be a product material calculator that allows the user to (1) select the color and (2)select the products to be manufactured in said color. When the user has made all of their selections,  (3) the application will display the required materials for production of those products.
 
 Production/Inventory Tracker overview: This application is to be a production and inventory tracker. When a user engages with the application, they must be able to:
     (1) Manually enter orders by color and product.
