@@ -11,7 +11,7 @@ class Calculate extends Component {
         super(props)
         this.state = {
             component: 1,
-            prodList: [{color: 'Color1', product: 'Product1'}]
+            prodList: [{color: 'Color 1', product: 'Product 1'}]
         }
     }
 
@@ -24,7 +24,7 @@ class Calculate extends Component {
         event.preventDefault();
         this.setState({
             component: this.state.component + 1,
-            prodList: [...this.state.prodList, {color: 'Color1', product: 'Product1'}]
+            prodList: [...this.state.prodList, {color: 'Color 1', product: 'Product 1'}]
         })
 
     }

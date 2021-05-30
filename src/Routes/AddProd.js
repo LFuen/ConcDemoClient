@@ -8,8 +8,8 @@ class AddProd extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            color: 'Color1', 
-            product: 'Product1',
+            color: 'Color 1', 
+            product: 'Product 1',
             orderId: 1 + Number(this.props.match.params.phase), 
             amount: 1,
         }
