@@ -11,7 +11,7 @@ class KiloCalculate extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: "Black",
+      color: "Color 1",
       kilos: 0,
       pigment: []
     };
