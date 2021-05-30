@@ -5,7 +5,7 @@ class Kilos extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: "Black",
+      color: "Color 1",
       kilo: 0,
     };
   }
