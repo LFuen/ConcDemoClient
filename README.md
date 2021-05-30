@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://www.ledjj.org">
-    <img src="public/votedLogo.png" alt="Logo" width="80" height="80">
+    <img src="public/votedLogo.png" alt="Logo" width="412" height="324">
   </a>
 
   <h3 align="center">Production Aplication Suite</h3>
