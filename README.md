@@ -7,8 +7,8 @@
 
   <h3 align="center">Production Aplication Suite</h3>
 
-<p>Demo Username: 'admin'</p>
-<p>Demo Password: 'Admin2021'</p>
+<p align="center">Demo Username: 'admin'</p>
+<p align="center">Demo Password: 'Admin2021'</p>
 
   <p align="center">
     This project is a suite of applications for Concretti, an artisanal concrete production company.
