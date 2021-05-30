@@ -5,4 +5,4 @@ export default {
 
 
 // http://localhost:8000/api
-// https://rocky-lowlands-26413.herokuapp.com
+// https://rocky-lowlands-26413.herokuapp.com/api

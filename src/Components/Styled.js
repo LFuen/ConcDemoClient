@@ -107,7 +107,7 @@ const Login = styled.section`
     color: #000000;
   }
 
-  animation: 1s ${loginFade};
+  /* animation: 1s ${loginFade}; */
 `;
 
 // APP SELECTOR
@@ -205,7 +205,7 @@ const Selector = styled.section`
     color: #000000;
   }
 
-  animation: 1s ${selectFade};
+  /* animation: 1s ${selectFade}; */
 `;
 
 // CALCULATOR APP
@@ -319,7 +319,7 @@ const CalcForm = styled.form`
   p {
     font-size: 10px;
   }
-  animation: 1s ${calcFade};
+  /* animation: 1s ${calcFade}; */
 
   #ledjj {
     font-family: Rockwell;
@@ -484,7 +484,7 @@ const KiloForm = styled.form`
   p {
     font-size: 10px;
   }
-  animation: 1s ${calcFade};
+  /* animation: 1s ${calcFade}; */
 
   #ledjj {
     font-family: Rockwell;
@@ -679,7 +679,7 @@ const OutputSec = styled.section`
     bottom: 18px;
   }
 
-  animation: 1s ${calcFade};
+  /* animation: 1s ${calcFade}; */
 `;
 const ProdChoose = styled.section`
   position: relative;
@@ -695,6 +695,13 @@ const ButtonDiv = styled.div`
 const ProdUl = styled.ul`
   list-style-type: none;
   padding-left: 0;
+
+  u {
+    font-weight: bold;
+    background-color: #d6d6d6;
+    border-radius: 5px;
+    padding: 3px;
+  }
 `;
 const Products = styled.section`
   text-align: center;
@@ -889,7 +896,7 @@ const InventorySect = styled.section`
     outline: none;
   }
 
-  animation: 1s ${prodFade};
+  /* animation: 1s ${prodFade}; */
 `;
 const InProdLink = styled(Link)`
   text-decoration: none;
@@ -1007,7 +1014,8 @@ const AddForm = styled.form`
 
   .prodSubmit {
     position: relative;
-    top: 60px;  }
+    top: 60px;
+  }
 
   .delete {
     position: relative;
@@ -1056,7 +1064,7 @@ const AddForm = styled.form`
     outline: none;
   }
 
-  animation: 1s ${prodFade};
+  /* animation: 1s ${prodFade}; */
 `;
 const ListingSec = styled.section`
   width: 583px;
@@ -1077,6 +1085,25 @@ const ListingSec = styled.section`
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
+  }
+
+  #links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 20px 0px 20px
+  }
+  
+  .links {
+    text-decoration: none;
+    font-family: Rockwell;    
+    padding: 6px;
+    color: black;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 6px grey;
+
+    &:hover{
+      color: whitesmoke;
+    }
   }
 
   #color {
@@ -1127,108 +1154,116 @@ const ListingSec = styled.section`
     top: 25px;
   }
 
-  animation: 1s ${prodFade};
+  /* animation: 1s ${prodFade}; */
 `;
 const InventorySec = styled.section`
-width: 583px;
-height: inherit;
-margin: 60px auto;
-background: #ffffff;
-border-radius: 29px;
-box-shadow: 2px 2px 6px grey;
-text-align: center;
-padding-bottom: 60px;
+  width: 620px;
+  height: inherit;
+  margin: 60px auto;
+  background: #ffffff;
+  border-radius: 29px;
+  box-shadow: 2px 2px 6px grey;
+  text-align: center;
+  padding-bottom: 60px;
 
-h1 {
-  position: relative;
-  top: 25px;
-  right: 25px;
-  margin: 40px auto;
-  font-family: Rockwell;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-}
+  h1 {
+    position: relative;
+    top: 25px;
+    right: 25px;
+    margin: 40px auto;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+  }
 
-#color {
-  position: relative;
-  bottom: 50px;
-  margin: 40px auto;
-  font-family: Rockwell;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-}
+  #color {
+    position: relative;
+    bottom: 50px;
+    margin: 40px auto;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+  }
 
-#back {
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
+  #back {
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
 
-#ledjj {
-  font-family: Rockwell;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 12px;
-  position: relative;
-  top: 10px;
-}
+  #ledjj {
+    font-family: Rockwell;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+  }
 
-Link,
-h1 {
-  display: inline;
-}
+  Link,
+  h1 {
+    display: inline;
+  }
 
-#backH1 {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.products {
-  position: relative;
-  bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.add button {
-  background: #b9e6ff;
-  text-decoration: none;
-  font-family: Rockwell;
-  border-radius: 10px;
-  font-size: 18px;
-  border-style: none;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  position: relative;
-  top: 10px;
-}
-.add button:hover {
-  transition: all 0.3s ease-out;
-  background-color: #0d3b4c;
-  color: whitesmoke;
-  font-weight: bold;
-}
-.add:focus {
-  outline: none;
-}
-
-.powered {
-  position: relative;
-  top: 25px;
-}
-
-animation: 1s ${prodFade};
-`; 
-const ProdSec = styled.section`
-  .stock {
+  #backH1 {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  .products {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .add button {
+    background: #b9e6ff;
+    text-decoration: none;
+    font-family: Rockwell;
+    border-radius: 10px;
+    font-size: 18px;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px;
+  }
+  .add button:hover {
+    transition: all 0.3s ease-out;
+    background-color: #0d3b4c;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  .add:focus {
+    outline: none;
+  }
+
+  .powered {
+    position: relative;
+    top: 25px;
+  }
+
+  /* animation: 1s ${prodFade}; */
+`;
+const ProdSec = styled.section`
+  margin-top: 30px;  
+  position: relative;
+  bottom: 40px;
+
+.stock {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .product {
+    height:  200px;
   }
 
   .orderDelete {
@@ -1400,7 +1435,7 @@ const ProdDiv = styled.div`
     font-size: 10px;
   }
 
-  animation: 1s ${prodFade};
+  /* animation: 1s ${prodFade}; */
 `;
 
 // MISCELLANEOUS
