@@ -13,7 +13,7 @@ class KiloCalculate extends Component {
     this.state = {
       color: "Color 1",
       kilos: 0,
-      pigment: ["Color 1"]
+      pigment: ["Pigment 1"]
     };
   }
 
