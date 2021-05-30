@@ -7,7 +7,6 @@ import {InventorySect,
 import TokenService from '../services/tokenService'
 import OrderService from '../services/orderService'
 import {Link} from 'react-router-dom'
-import { phaseArray } from '../Components/Calculator/store'
 
 class Inventory extends Component {
     
