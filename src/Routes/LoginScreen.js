@@ -46,7 +46,7 @@ const LoginScreen = (props) => {
             {error && <div>{error.error}</div>}
         <br />
         <label htmlFor="user_department" className="log-input">
-          Employee ID
+          Employee ID (admin)
         </label>
         <br />
         <br/>
@@ -54,7 +54,7 @@ const LoginScreen = (props) => {
         <br />
         <br />
         <label htmlFor="user_password" className="log-input">
-          Password
+          Password (Admin2021)
         </label>
         <br />
         <br/>
