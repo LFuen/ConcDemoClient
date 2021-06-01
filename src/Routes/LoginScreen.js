@@ -36,7 +36,7 @@ const LoginScreen = (props) => {
       <article>
         <h1>Demo</h1>
 
-        <button onClick={handleDemoClick}>
+        <button id='login' onClick={handleDemoClick}>
             Launch Demo
         </button>
         
