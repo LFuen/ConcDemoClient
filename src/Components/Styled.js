@@ -77,6 +77,7 @@ const Login = styled.section`
   }
 
   #login {
+    display: block;
     background: #b9e6ff;
     text-decoration: none;
     border-radius: 10px;
@@ -84,7 +85,7 @@ const Login = styled.section`
     font-weight: bold;
     font-family: Rockwell;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-style: none;
   }
 
