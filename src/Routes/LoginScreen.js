@@ -5,7 +5,6 @@ import TokenService from "../services/tokenService";
 import authApiService from "../services/authApiService";
 
 const LoginScreen = (props) => {
-  const [error, setError] = useState(null);
 
   const handleLoginSuccess = () => {
     const { location, history } = props;
@@ -13,29 +12,6 @@ const LoginScreen = (props) => {
     props.setUserId(jwt.decode(TokenService.getAuthToken()).userId);
     props.setUsername(jwt.decode(TokenService.getAuthToken()).user_department);
     history.push(destination);
-  };
-
-  const handleSubmitJwtAuth = (e) => {
-    e.preventDefault();
-    setError(null);
-    const { user_department, user_password } = e.target;
-    authApiService
-      .postLogin({
-        user_department: user_department.value,
-        user_password: user_password.value,
-      })
-      .then((res) => {
-        if (!res.status === 200) {
-          return res.json().then((error) => Promise.reject(error));
-        }
-        user_department.value = "";
-        user_password.value = "";
-        TokenService.saveAuthToken(res.authToken);
-        handleLoginSuccess();
-      })
-      .catch((res) => {
-        setError({ error: res.error });
-      });
   };
 
   const handleDemoClick = (e) => {
