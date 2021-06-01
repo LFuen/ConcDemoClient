@@ -38,33 +38,32 @@ const LoginScreen = (props) => {
       });
   };
 
+  const handleDemoClick = (e) => {
+    e.preventDefault();
+    authApiService
+      .postLogin({
+        user_department: "admin",
+        user_password: "Admin2021",
+      })
+      .then((res) => {
+        if (!res.status === 200) {
+          return res.json().then((err) => Promise.reject(err));
+        }
+        TokenService.saveAuthToken(res.authToken);
+        handleLoginSuccess();
+      })
+      .catch((res) => {});
+  };
+
   return (
     <Login className="main">
       <article>
         <h1>Demo</h1>
-        <form onSubmit={handleSubmitJwtAuth}>
-            {error && <div>{error.error}</div>}
-        <br />
-        <label htmlFor="user_department" className="log-input">
-          Employee ID (admin)
-        </label>
-        <br />
-        <br/>
-        <input type="text" id="user_department"></input>
-        <br />
-        <br />
-        <label htmlFor="user_password" className="log-input">
-          Password (Admin2021)
-        </label>
-        <br />
-        <br/>
-        <input type="password" id="user_password"></input>
-        <br />
 
-        <button type="submit" id="login">
-          Login
+        <button onClick={handleDemoClick}>
+            Launch Demo
         </button>
-        </form>
+        
         <span id="ledjj">Powered by L.E.D.J.J. &copy;</span>
       </article>
     </Login>
