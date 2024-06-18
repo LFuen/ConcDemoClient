@@ -1,34 +1,15 @@
 import React from "react";
-import jwt from "jsonwebtoken";
+import { useHistory } from "react-router-dom";
 import { Login } from "../Components/Styled";
-import TokenService from "../services/tokenService";
-import authApiService from "../services/authApiService";
 
 const LoginScreen = (props) => {
-
-  const handleLoginSuccess = () => {
-    const { location, history } = props;
-    const destination = (location.state || {}).from || "/AppSelect";
-    props.setUserId(jwt.decode(TokenService.getAuthToken()).userId);
-    props.setUsername(jwt.decode(TokenService.getAuthToken()).user_department);
-    history.push(destination);
-  };
+  const history = useHistory();
 
   const handleDemoClick = (e) => {
     e.preventDefault();
-    authApiService
-      .postLogin({
-        user_department: "admin",
-        user_password: "Admin2021",
-      })
-      .then((res) => {
-        if (!res.status === 200) {
-          return res.json().then((err) => Promise.reject(err));
-        }
-        TokenService.saveAuthToken(res.authToken);
-        handleLoginSuccess();
-      })
-      .catch((res) => {});
+    const { location } = props;
+    const destination = (location.state || {}).from || "/AppSelect";
+    history.push(destination);
   };
 
   return (
@@ -48,9 +29,6 @@ const LoginScreen = (props) => {
 
 Login.defaultProps = {
     location: {},
-    history: {
-      push: () => {},
-    },
   };
 
 export default LoginScreen;

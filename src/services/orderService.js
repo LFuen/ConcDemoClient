@@ -1,5 +1,4 @@
 import config from "../config";
-import TokenService from './tokenService'
 
 const OrderService = {
 
@@ -15,7 +14,6 @@ const OrderService = {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
-        "Authorization": `Bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify(amount),
     }).then((res) =>
@@ -27,7 +25,6 @@ const OrderService = {
       method: "POST",
       headers: {
         "content-type": "application/json",
-        "Authorization": `Bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify(order),
     }).then((res) =>
@@ -47,7 +44,6 @@ const OrderService = {
           method: "PATCH",
           headers: {
             "content-type": "application/json",
-            "Authorization": `Bearer ${TokenService.getAuthToken()}`
           },
           body: JSON.stringify({ amount: 0 })
       })
@@ -61,7 +57,6 @@ const OrderService = {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
-        "Authorization": `Bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify(amount)
     }).then((res) =>
@@ -74,7 +69,6 @@ const OrderService = {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
-        "Authorization": `Bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify(order),
     }).then((res) =>
@@ -99,7 +93,6 @@ const OrderService = {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
-        "Authorization": `Bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify(order),
     }).then((res) =>
