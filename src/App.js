@@ -48,7 +48,7 @@ const App = () => {
             <Route
               exact
               path="/Inventory"
-              component={(props) => <Inventory {...props} setUserId={setUserId}/>}
+              component={(props) => <Inventory {...props}/>}
             />
             <Route
               exact
