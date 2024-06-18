@@ -7,12 +7,10 @@ import InventoryPhase from "./Components/Production/InventoryPhase";
 import Footer from "./Components/Footer";
 import LoginScreen from "./Routes/LoginScreen";
 import AddProd from "./Routes/AddProd";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TokenService from "./services/tokenService";
 import jwt from "jsonwebtoken";
 import ErrorBoundary from "./Components/Utils/ErrorBoundary";
-import PublicRoute from "./Components/Utils/PublicRoute";
-import PrivateRoute from "./Components/Utils/PrivateRoute";
 import KiloCalculate from "./Components/Calculator/KiloCalculate";
 import Listing from "./Components/Production/Listing";
 
@@ -34,7 +32,7 @@ const App = () => {
       <ErrorBoundary>
         <Router>
           <Switch>
-            <PublicRoute
+            <Route
               exact
               path="/"
               component={(props) => (
@@ -47,43 +45,43 @@ const App = () => {
                 </>
               )}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/AppSelect"
               component={(props) => <AppSelect {...props} setUserId={setUserId}
               setUsername={setUsername} />}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/Calculate"
               component={(props) => <Calculate {...props} />}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/Output"
               component={(props) => <Output {...props} />}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/Inventory"
               component={(props) => <Inventory {...props} setUserId={setUserId}/>}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/AddProd/:phase"
               component={(props) => <AddProd {...props} />}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/Inventory/:phase"
               component={(props) => <InventoryPhase {...props} />}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/KiloCalculate"
               component={(props) => <KiloCalculate {...props} />}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/Listing/:color/:phase"
               component={(props) => <Listing {...props} />}

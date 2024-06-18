@@ -2,8 +2,7 @@ import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import {
   fadeInDown,
-  fadeInRight,
-  fadeInLeft,
+  fadeIn,
   fadeInUp,
 } from "react-animations";
 
@@ -210,7 +209,7 @@ const Selector = styled.section`
 `;
 
 // CALCULATOR APP
-const calcFade = keyframes`${fadeInRight}`;
+const calcFade = keyframes`${fadeIn}`;
 const CalcForm = styled.form`
   width: 583px;
   height: inherit;
@@ -790,7 +789,7 @@ const ListSect = styled.section`
 `;
 
 // PRODUCTION APP
-const prodFade = keyframes`${fadeInLeft}`;
+const prodFade = keyframes`${fadeIn}`;
 const InventorySect = styled.section`
   width: 583px;
   height: inherit;
