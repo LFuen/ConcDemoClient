@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import AppSelect from "./Routes/AppSelect";
 import Calculate from "./Routes/Calculate";
 import Output from "./Components/Calculator/Output";
@@ -8,24 +8,11 @@ import Footer from "./Components/Footer";
 import LoginScreen from "./Routes/LoginScreen";
 import AddProd from "./Routes/AddProd";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import TokenService from "./services/tokenService";
-import jwt from "jsonwebtoken";
 import ErrorBoundary from "./Components/Utils/ErrorBoundary";
 import KiloCalculate from "./Components/Calculator/KiloCalculate";
 import Listing from "./Components/Production/Listing";
 
 const App = () => {
-  const [userId, setUserId] = useState(null);
-  // eslint-disable-next-line no-unused-vars
-  const [username, setUsername] = useState("");
-
-  useEffect(() => {
-    if (!TokenService.getAuthToken()) return;
-    if (TokenService.getAuthToken() && userId == null) {
-      setUserId(jwt.decode(TokenService.getAuthToken()).userId);
-      setUsername(jwt.decode(TokenService.getAuthToken()).username);
-    }
-  }, [userId]);
 
   return (
     <>
@@ -39,8 +26,6 @@ const App = () => {
                 <>
                   <LoginScreen
                     {...props}
-                    setUserId={setUserId}
-                    setUsername={setUsername}
                   />
                 </>
               )}
@@ -48,8 +33,7 @@ const App = () => {
             <Route
               exact
               path="/AppSelect"
-              component={(props) => <AppSelect {...props} setUserId={setUserId}
-              setUsername={setUsername} />}
+              component={(props) => <AppSelect {...props} />}
             />
             <Route
               exact
