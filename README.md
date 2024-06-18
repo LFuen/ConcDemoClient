@@ -50,8 +50,6 @@ Production/Inventory Tracker overview: This application is to be a production an
   <p>
     <br />
     <h3><strong>Contributors<strong><h3>
-    <a href="https://github.com/jpol95"><strong>Jesse Pollack</strong></a>
-    <br/>
     <a href="https://github.com/LFuen"><strong>Lili Fuentes</strong></a>
     <br/>
     <a href="https://github.com/elijahsimpsonn"><strong>Elijah Simpson</strong></a>
